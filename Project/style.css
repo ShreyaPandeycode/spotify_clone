@@ -1,0 +1,259 @@
+
+body {
+    background-color: rgb(9, 10, 9);
+    font-family: 'Monoton', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    overflow:hidden;
+    color:rgb(255, 255, 255);
+}
+.main{
+    display: flex;
+    height:100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+     background-color: rgb(83, 83, 78);
+     width: 300px; /* Set a fixed width */
+     border-radius: 1rem;
+     margin-right:0.5rem;
+     box-sizing: border-box;
+}
+.main-content{
+    background-color: rgb(12, 12, 12); 
+     flex:1; /*bacha hua space apun ka */
+    border-radius: 1rem;
+    overflow:scroll;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: rgb(65, 65, 70);
+    height:70px;
+    width:100vw;
+    bottom:0;
+    position:fixed;
+}
+.nav{
+    background-color:rgb(75, 73, 73) ;
+    display:flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    height:100px;
+    padding: 0.5rem 0.75rem;
+    font-size:10px;
+}
+a{
+    text-decoration: none;
+    color:rgb(252, 245, 245); 
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding: 8px;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-option:hover{
+     opacity: 1;
+}
+.library{
+    background-color: rgb(75, 73, 73);
+    border-radius : 1rem;
+    margin-top: 0.5rem;
+    padding:8px;
+}
+.option-lib{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.options img {
+    height:1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font: size 1.25 rem;
+    opacity:0.7;
+    margin-right:1rem;
+    margin-top: 1rem;
+    display:flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+ .boxes{
+    height:8rem;
+    background-color: rgb(123, 120, 120);
+    border-radius: 1rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 1rem 1.25rem;
+    letter-spacing: 0.15rem;
+ }
+ .box1{
+    font-size: 1rem;
+    font-weight:700;
+ }
+ .box2{
+    font-size: 0.75rem;
+    opacity:0.8;
+ }
+ .box3{
+    background-color: white;
+    border:none;
+    border-radius:100px;
+    padding: 0.25rem 1rem;
+    font-weight:700;
+    width: fit-content;
+    box-size: 50px;
+ }
+ .nav_sticky{
+    position:sticky;
+    top:0;
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1rem 0;
+    z-index:1;
+ }
+ .buttons{
+    margin-right: 1rem;
+    justify-content: space-evenly;
+ }
+.sticky-icons img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+@media (max-width: 1000px){
+    .hide{
+        display:none;
+    }
+}
+
+.card{
+    background-color: rgb(114, 112, 112);
+    width:150px;
+    border-radius: .5rem;
+    padding:1rem;
+    margin:  1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap:wrap;
+    /* margin-left:1rem; */  
+}
+.cards h2{
+    letter-spacing: 0.25rem;
+}
+.card-img{
+     width:100%;
+     border-radius: .5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+   opacity:0.5;
+}
+.footer{
+    height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    height:30%;
+    border-top: 2px solid white;
+    
+}
+.music-player{
+    display:flex;
+}
+.album{
+    width:25%;
+}
+.player{
+    margin: 10px 0;
+    width:55%;
+}
+
+.controls-icon{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.active{
+    width:15px;
+    height:15px;
+    margin-right:2rem;
+    opacity:0.7;
+}
+.active:hover{
+    opacity:1;
+}
+.active.play{
+    height:2rem;
+    width:2rem;
+    opacity:1;
+}
+
+.progress {
+    display:flex;
+    margin-left:15%;
+     width:70%;
+    
+}
+.progress-bar{
+    width: 170rem;
+    background-color: transparent;
+    cursor:pointer;
+    appearance:none;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+     height:1rem;
+     width:1rem;
+    background-color: #32a254;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top:-6px;
+    color:green;
+}
+.album-icon{
+    display:flex;
+   
+    align-items: center;
+}
+.work{
+    width: 2rem;
+    height: 2rem; 
+    margin:2rem 0.5rem 1rem 0.15rem;
+    border-radius:50%;
+    opacity:0.7;
+}
+.work:hover{
+    opacity:1;
+}
+.heart:hover{
+    color:white;
+    background-color:red;
+}
